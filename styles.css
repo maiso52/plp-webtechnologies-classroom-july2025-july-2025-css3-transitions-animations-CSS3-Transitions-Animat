@@ -1,0 +1,47 @@
+/* General styling */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 50px;
+  background: #f4f4f4;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+/* Part 1: CSS Transitions & Animations */
+.fancy-btn {
+  background: dodgerblue;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.fancy-btn:hover {
+  transform: scale(1.1);
+  background: royalblue;
+}
+
+/* Box for animation demo */
+.box {
+  width: 100px;
+  height: 100px;
+  background: tomato;
+  margin: 30px auto;
+  border-radius: 10px;
+  transition: transform 1s ease;
+}
+
+/* Triggered animations */
+.animate {
+  animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+  from { transform: translateY(0); }
+  to { transform: translateY(-50px); }
+}
